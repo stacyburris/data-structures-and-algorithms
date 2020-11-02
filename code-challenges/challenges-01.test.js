@@ -36,19 +36,22 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
-  value.push(arr);
+  arr.push(value);
   // addValues.forEach((arr, value) => {
-  //   if (value.push(arr));
+  //   if (arr.push(value));
 
   // })
-}
+};
 
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  if (num = 8 * arr);
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
+  }
+  // if (num = 8 * arr);
 
-  return addValues(num, arr, times, callback);
+  return (arr);
 };
 
 
