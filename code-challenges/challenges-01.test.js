@@ -37,31 +37,16 @@ Return the modified array.
 const addValues = (arr, value) => {
   // Solution code here...
   arr.push(value);
-  // addValues.forEach((arr, value) => {
-  //   if (arr.push(value));
-
-  // })
 };
-
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  for (let i = 0; i < times; i++) {
+  for (var i = 0; i < times; i++) {
     callback(arr, num);
+
   }
-  // if (num = 8 * arr);
-
-  return (arr);
+  return arr;
 };
-
-
-// describe('Testing challenge 2', () => {
-//   test('It should add the number 8 to the array five times', () => {
-//     expect(addNumbers(8, [], 5, addValues)).toStrictEqual([8, 8, 8, 8, 8]);
-//     expect(addNumbers(8, [], 5, addValues).length).toStrictEqual(5);
-//   });
-// });
-
 
 /* ------------------------------------------------------------------------------------------------
 
@@ -83,9 +68,12 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
-  createList.forEach(name, available);
-
-  return createList(availableItems);
+  let groceryList = [];
+  availableItems.forEach(Object => {
+    if (Object.available === true)
+      groceryList.push(Object.name);
+  });
+  return groceryList;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -104,12 +92,22 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
-  if (arr % 3) 'Fizz';
-  if (arr % 5) 'Buzz';
-  if (arr % 3 && 5) 'Fizz Buzz';
-  return fizzbuzz(arr);
-};
+  let outPutArray = [];
+  arr.forEach(number => {
+    if (number % 3 === 0 && number % 5 === 0) {
+      outPutArray.push('Fizz Buzz');
+    } else if (number % 3 === 0) {
+      outPutArray.push('Fizz');
 
+    } else if (number % 5 === 0) {
+      outPutArray.push('Buzz');
+    } else {
+      outPutArray.push(number);
+    }
+
+  });
+  return outPutArray;
+};
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
