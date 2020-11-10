@@ -59,25 +59,12 @@ const forEachTwoToThe = (arr) => {
   // Solution code here...
   let newArray = [];
   arr.forEach(raised => {
-
-  })
+    let numberRaised = Math.pow(2, raised);
+    newArray.push(numberRaised);
+  });
+  return newArray;
 };
 
-
-
-// const raisedToTheThird = (arr) => {
-//   // Solution code here...
-//   // take array
-//   //raised each # to third power...look that up
-//   //return new arr
-
-//   let numberArray = [];
-//   arr.forEach(raised => {
-//     let numRaised = Math.pow(raised, 3);
-//     numberArray.push(numRaised);
-//   });
-//   return numberArray;
-// };
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,7 +75,10 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
+  let newArray = arr.map(raised => Math.pow(2, raised));
+  return newArray;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
