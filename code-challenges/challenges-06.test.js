@@ -147,7 +147,6 @@ const hasChildrenValues = (arr, character) => {
       hasKids = true;
     } else {
       hasKids = false;
-
     }
 
     return hasKids;
