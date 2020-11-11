@@ -142,16 +142,14 @@ const hasChildrenValues = (arr, character) => {
   // Solution code here...
   let hasKids = false;
   arr.forEach(item => {
-    if (character === item.name) {
-      Object.values(item[2].length > 0);
+    if (character === item.name && Object.values(item)[2].length > 0) {
+
       hasKids = true;
-    } else {
-      hasKids = false;
+
     }
 
-    return hasKids;
-
   });
+  return hasKids;
 }
 
 /* ------------------------------------------------------------------------------------------------
