@@ -11,7 +11,16 @@ const createServer = () => {
   const express = require('express');
   const app = express();
 
-  app.get('/aboutme',);
+  app.get('/hello', (req, res) => {
+    res.send('Hello, How are you?');
+  });
+
+  app.get('/aboutme', (req, res) => {
+    res.send('Hello, My name is Stacy! I live the color yellow.');
+  });
+  app.get('/favoritefoods', (req, res) => {
+    res.send(['tacos', 'gyros', 'curry']);
+  });
 
 
   var server = app.listen(3301, function () {
@@ -33,20 +42,19 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
-
-
-  //let newArray = input.flat();
+  let newArray = input.flat();
 
   // let arr = target.split([]);
-  let newArray = arr.reduce((acc, val) => {
-    if (val = target) {
-      acc.push(target);
-      console.log(acc);
-      return acc;
-    }
+  let newFilteredArray = newArray.filter(val => {
+    return target === val;
 
-  }, []);
-  return newArray;
+    // if (val === target) {
+    //   acc.push(target);
+    //   console.log(acc);
+    //   return acc;
+
+  });
+  return newFilteredArray.length;
 
 };
 
