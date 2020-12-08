@@ -63,3 +63,7 @@ The final structure should resemble this:
   ├── package.json
   └── README.md
 ```
+
+# Table of Contents:
+
++ [arrayReverse](javascript/code-challenges/arrays/arrayReverse/README.md)
