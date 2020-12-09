@@ -1,6 +1,6 @@
 # Reverse an Array
 
-+ Take an array of strings or numbers and revers the contents
++ Take an array of strings or numbers and reverse the contents
 
 ## Challenge
 
