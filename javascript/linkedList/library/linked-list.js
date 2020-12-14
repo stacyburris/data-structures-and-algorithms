@@ -30,12 +30,12 @@ class LinkedList { // creates a linked list class
     let newString = ''; // create an empty string because that is what you want the output to be
     let currentItem = this.head; // initialize a variable set to the current head
     while (currentItem !== null) { // loop through current list until it get to the next part of null
-      let linked = `{ ${currentItem.anyValue} } ->`; // initialize a variable to look like output string
-      newString += linked; // compare
+      let linked = `{ ${currentItem.value} } ->`; // initialize a variable to look like output string
+      newString += linked; // combining together (+=)
       currentItem = currentItem.next; // set current node to equal and go next
       //return 'no value exists';
     }
-    newString += 'NULL'; // outside of the while loop let the final node equal null
+    newString += `NULL`; // outside of the while loop let the final node equal null
     return newString; // return all so that it is in a string
 
   }
