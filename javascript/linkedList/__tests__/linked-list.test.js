@@ -18,7 +18,9 @@ describe('Linked List', () => {
   it('The head property will properly point to the first node in the linked list', () => {
     const list = new Link();
     list.insert('a');
-    expect(list.head.value).toEqual('a');
+    list.insert('b');
+    list.insert('c');
+    expect(list.head.value).toEqual('c');
   });
 
   it('Can properly insert multiple nodes into the linked list', () => {
