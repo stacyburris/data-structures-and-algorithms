@@ -21,3 +21,12 @@
 ### Contributors & Collaborators
 
 + TA Kristian & Simon
+
+///////////////////////////////////////////////////////////
+# Code Challenge: Class 06
+
+### Worked with:
+
++ Sara Strasner and Tina Myers
+
++ ![LL Insert](/assets/LL-insertions.png)

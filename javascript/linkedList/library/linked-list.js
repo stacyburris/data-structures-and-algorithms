@@ -45,7 +45,7 @@ class LinkedList { // creates a linked list class
 module.exports = LinkedList;
 
 
-// throw a custom semantic error 
+// throw a custom semantic error
 // if (!value) throw new Error('no head was found');
 
 
