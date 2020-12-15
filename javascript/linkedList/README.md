@@ -25,8 +25,32 @@
 ///////////////////////////////////////////////////////////
 # Code Challenge: Class 06
 
-### Worked with:
+### Contributors & Collaborators
 
 + Sara Strasner and Tina Myers
 
-+ ![LL Insert](/assets/insertion.png)
++ ![LL Insert](assets/insertion.png)
+
+```
+.append(value)
+.insertBefore(value, newVal)
+.insertAfter(value, newVal)
+```
+
+# Code Challenge: Class 07
+
++ k-th value from the end of a linked list
+
+### Contributors & Collaborators
+
++ Simon Panek and Ricardo Barcenas
+
+### Challenge
+
++ Given a position value return a value of the node at the position given as an argument.
+
+## API & Efficiency
+
+`ll.kthFromEnd(k)` - Starting at the head iterate though the linked list and unshift the values to return a new array with the index reversed. O(n)
+
++ ![kthFromEnd](assets/k-th-valuefromtheend.png)

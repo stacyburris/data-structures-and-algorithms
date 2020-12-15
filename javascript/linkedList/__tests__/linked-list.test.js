@@ -65,7 +65,50 @@ describe('Linked List', () => {
     list.insert('c');
     list.insert('d');
     list.insert('findMe');
-    //expect('{findMe} -> {d} -> {c} -> {b} -> {a} -> NULL').toEqual('{findMe} -> {d} -> {c} -> {b} -> {a} -> NULL');
     expect(list.toString()).toEqual('{ findMe } ->{ d } ->{ c } ->{ b } ->{ a } ->NULL');
+  });
+
+
+  //Code Challenge Day 7 kthFromEnd Below/////////////////////////
+  it('Should return false where the given value is greater than the length of the list', () => {
+    const list = new Link();
+    list.insert('one');
+    list.insert('two');
+    list.insert('three');
+    list.insert('four');
+    list.insert('five');
+    expect(list.kthFromEnd(7)).toEqual(false);
+  });
+  it('Should return the head.value if the given position is equal to the length of the list', () => {
+    const list = new Link();
+    list.insert('one');
+    list.insert('two');
+    list.insert('three');
+    list.insert('four');
+    list.insert('five');
+    expect(list.kthFromEnd(4)).toEqual('five');
+  });
+  it('Should return false if given value is negative', () => {
+    const list = new Link();
+    list.insert('one');
+    list.insert('two');
+    list.insert('three');
+    list.insert('four');
+    list.insert('five');
+    expect(list.kthFromEnd(-3)).toEqual(false);
+  });
+  it('Should return the value of the head node if the list is only one node long and k = 0', () => {
+    const list = new Link();
+    list.insert('one');
+    expect(list.kthFromEnd(0)).toEqual('one');
+  });
+  it('Should return the value of the node at a given position', () => {
+    const list = new Link();
+    list.insert('one');
+    list.insert('two');
+    list.insert('three');
+    list.insert('four');
+    list.insert('five');
+    expect(list.kthFromEnd(3)).toEqual('four');
   });
 });
