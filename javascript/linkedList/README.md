@@ -29,4 +29,4 @@
 
 + Sara Strasner and Tina Myers
 
-+ ![LL Insert](/assets/LL-insertions.png)
++ ![LL Insert](/assets/insertion.png)
