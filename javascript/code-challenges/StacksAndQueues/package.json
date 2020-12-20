@@ -1,0 +1,19 @@
+{
+  "name": "StacksAndQueues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stacks-and-queues.js",
+  "scripts": {
+    "test": "jest --watchAll --coverage",
+    "watch": "jest --coverage --verbose --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^23.6.0"
+  },
+  "devDependencies": {
+    "handlebars": "^4.5.0"
+  }
+}

@@ -1,6 +1,6 @@
 'use strict';
 
-const Node = require('../library/node'); // brings in node class
+const Node = require('./node'); // brings in node class
 
 class LinkedList { // creates a linked list class
   constructor() {
@@ -39,6 +39,35 @@ class LinkedList { // creates a linked list class
     return newString; // return all so that it is in a string
 
   }
+
+  insertBefore(value, newValue) {
+    let currentNode = this.head;
+    while (currentNode) {
+      if (currentNode.next.value !== value) {
+        currentNode = currentNode.next;
+      } else {
+        let newNode = new Node(newValue);
+        newNode.next = currentNode.next;
+        currentNode.next = newNode;
+
+      }
+    }
+  }
+
+  insertAfter(value, newValue) {
+    let current = this.head;
+    while (current) {
+      if (current.value !== value) {
+        current = current.next;
+      } else {
+        let newNode = new Node(newValue);
+        newNode.next = current.next;
+        current.next = newNode;
+
+      }
+    }
+  }
+
 
   kthFromEnd(k) {
     let nodeValue = [];
