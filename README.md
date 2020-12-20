@@ -6,4 +6,5 @@
 + [arrayShift](javascript/code-challenges/arrays/arrayShift/README.md)
 + [arrayBinarySearch](javascript/code-challenges/arrays/arrayBinarySearch/README.md)
 + [Linked List Implementation](javascript/linkedList/README.md)
-+ [llZip](javascript/linkedList/llzip/README.md)
++ [llZip](javascript/code-challenges/linkedList/llzip/README.md)
++ [Stacks and Queues](javascript/code-challenges/StacksAndQueues/README.md)
