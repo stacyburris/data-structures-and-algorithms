@@ -3,7 +3,7 @@
 
 const Stack = require('route');
 
-class PuesdoQueue {
+class PseudoQueue {
   constructor(value) {
     this.stackOne = new Stack();
     this.stackTwo = new Stack();
