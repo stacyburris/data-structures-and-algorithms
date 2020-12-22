@@ -8,3 +8,4 @@
 + [Linked List Implementation](javascript/linkedList/README.md)
 + [llZip](javascript/code-challenges/linkedList/llzip/README.md)
 + [Stacks and Queues](javascript/code-challenges/StacksAndQueues/README.md)
++ [Queues With Stacks](javascript/code-challenges/queueWithStacks/README.md)
