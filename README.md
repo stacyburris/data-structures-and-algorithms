@@ -10,3 +10,4 @@
 + [Stacks and Queues](javascript/code-challenges/StacksAndQueues/README.md)
 + [Queues With Stacks](javascript/code-challenges/queueWithStacks/README.md)
 + [Fifo Animal Shelter](javascript/code-challenges/fifoAnimalShelter/README.md)
++ [Multi-bracket Validation](javascript/code-challenges/multiBracketValidation/README.md)
