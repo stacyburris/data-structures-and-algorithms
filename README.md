@@ -11,3 +11,4 @@
 + [Queues With Stacks](javascript/code-challenges/queueWithStacks/README.md)
 + [Fifo Animal Shelter](javascript/code-challenges/fifoAnimalShelter/README.md)
 + [Multi-bracket Validation](javascript/code-challenges/multiBracketValidation/README.md)
++ [Trees](javascript/code-challenges/tree/README.md)
