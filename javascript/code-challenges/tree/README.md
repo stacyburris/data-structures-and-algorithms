@@ -10,14 +10,28 @@
 
 ## Approach & Efficiency
 
-+ BigO:
-  + O(n) time
-  + O(h) complexity
++ preOrder = O(n)
++ inOrder = O(n)
++ postOrder = O(n)
++ add = O(h)
++ contains = O(log n)
 
 ## API
 
 **BinaryTree**
 
-- preOrder = root, left, right
-- inOrder = left, root, right
-- postOrder = left, right, root 
++ preOrder = root, left, right 
++ inOrder = left, root, right 
++ postOrder = left, right, root
+
+**BinarySearchtree**
+
++ add = adds a node with a given value to the correct location in a binary search tree 
++ contains = returns a boolean which will determine whether a searched value is located in a binary search tree 
+### Resources
+
++ [Binary Search trees](https://www.youtube.com/watch?v=9Jry5-82I68)
++ [Binary Trees](https://www.youtube.com/watch?v=FcaTY3_EvZQ&feature=youtu.be)
++ [Binary Trees and Recursion](https://www.youtube.com/watch?v=MhYw0X6BfxM&feature=youtu.be)
++ [Tree Traversal via JavaScript](https://www.digitalocean.com/community/tutorials/js-tree-traversal)
++ [Stack overflow](https://stackoverflow.com/questions/62474030/binary-tree-code-cannot-read-property-data-of-undefined)
