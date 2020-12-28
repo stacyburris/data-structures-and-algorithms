@@ -35,3 +35,18 @@
 + [Binary Trees and Recursion](https://www.youtube.com/watch?v=MhYw0X6BfxM&feature=youtu.be)
 + [Tree Traversal via JavaScript](https://www.digitalocean.com/community/tutorials/js-tree-traversal)
 + [Stack overflow](https://stackoverflow.com/questions/62474030/binary-tree-code-cannot-read-property-data-of-undefined)
+
+
+# Code Challenge: Class 16
+
+## Find the Maximum Value in a Binary Tree
+
+## Challenge
+
++ Find the max value in a Binary Tree and return that value
+  + Constraint: Without using built-in methods
+
+### Contributors and Colaborators
+
++ Tina Myers and Sara Strasner
+
