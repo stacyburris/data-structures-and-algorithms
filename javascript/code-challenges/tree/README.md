@@ -28,6 +28,7 @@
 
 + add = adds a node with a given value to the correct location in a binary search tree 
 + contains = returns a boolean which will determine whether a searched value is located in a binary search tree 
+
 ### Resources
 
 + [Binary Search trees](https://www.youtube.com/watch?v=9Jry5-82I68)
@@ -35,7 +36,6 @@
 + [Binary Trees and Recursion](https://www.youtube.com/watch?v=MhYw0X6BfxM&feature=youtu.be)
 + [Tree Traversal via JavaScript](https://www.digitalocean.com/community/tutorials/js-tree-traversal)
 + [Stack overflow](https://stackoverflow.com/questions/62474030/binary-tree-code-cannot-read-property-data-of-undefined)
-
 
 # Code Challenge: Class 16
 
@@ -46,7 +46,30 @@
 + Find the max value in a Binary Tree and return that value
   + Constraint: Without using built-in methods
 
-### Contributors and Colaborators
+### Approach & Efficiency
+
++ findMaximumValue() = O(n)
+
+### Contributors and Collaborators
 
 + Tina Myers and Sara Strasner
 
++ ![code-challenge 16](code-challenge16.png)
+
+# Code Challenge: Class 17
+
+## Breadth-first Traversal
+
+## Challenge
+
++ Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods. Traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+### Approach & Efficiency
+
++ breadthFirst() = O(n * h)
+
+### Contributors and Collaborators
+
++ Tina Myers and Sara Strasner
+
++ ![breadth-first](Breadth-first-Traversal.png)
