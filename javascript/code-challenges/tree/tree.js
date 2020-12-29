@@ -53,7 +53,42 @@ class BinaryTree {
     return newArray;
   }
 
+  //////////////////////////////////////////////////////
+  // code challenge 16
+  findMaximumValue() {
+    let arrayValues = inOrder(root);
+
+    for (i = 0; i <= arrayValues.length; i++) {
+      let max = 0;
+
+      if (arrayValues[i] > max)
+        max = arrayValues[i];
+    }
+
+    return max;
+  }
+  ///////////////////////////////////////////////////////
+
+  breadthFirst(root) {
+    if (!root) throw new Error;
+    let array = [];
+    let currentNode = this.root;
+    array.push(currentNode.value);
+    function _helper(node) {
+      if (currentNode.left) array.push(currentNode.left.value);
+      if (currentNode.right) array.push(currentNode.right.value);
+      if (currentNode.left) currentNode = currentNode.left;
+      if (currentNode.right) currentNode = currentNode.right;
+
+      return;
+
+    }
+    _helper(currentNode);
+    return array;
+  }
+
 }
+
 
 class BinarySearchTree {
   constructor(rootNode = null) {
@@ -88,24 +123,11 @@ class BinarySearchTree {
     return traverse(node);
   }
 
+
 }
 
-findMaximumValue() {
-  let arrayValues = inOrder(root);
-
-  for (i = 0; i <= arrayValues.length; i++) {
-    let max = 0;
-
-    if (arrayValues[i] > max)
-      max = arrayValues[i];
-  }
-
-  return max;
-}
-
-
-
-
+/////////////////////////////////////////////////
+// code challenge 17
 
 
 
