@@ -16,3 +16,7 @@
 ## Solution
 
  ![k-ary tree](k-ary.png)
+
+### Contributors and Collaborators
+
++ Tina Myers and Sara Strasner
