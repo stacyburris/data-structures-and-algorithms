@@ -1,10 +1,10 @@
 'use strict';
 
 class Node {
-  //constructor(value = null, left = null, right = null) {
-  constructor(value) {
-    this.left = null;
-    this.right = null;
+  constructor(value = null, left = null, right = null) {
+    //constructor(value) {
+    this.left = left;
+    this.right = right;
     this.value = value;
 
   }
@@ -56,32 +56,43 @@ class BinaryTree {
   //////////////////////////////////////////////////////
   // code challenge 16
   findMaximumValue() {
-    let arrayValues = inOrder(root);
-
-    for (i = 0; i <= arrayValues.length; i++) {
-      let max = 0;
-
-      if (arrayValues[i] > max)
-        max = arrayValues[i];
+    let maxValue = 0;
+    function _recursionPre(node) {
+      if (maxValue < node.value) {
+        maxValue = node.value;
+      }
+      if (node.left) {
+        _recursionPre(node.left);
+      }
+      if (node.right) {
+        _recursionPre(node.right);
+      }
     }
-
-    return max;
+    _recursionPre(this.root);
+    return maxValue;
   }
   ///////////////////////////////////////////////////////
 
-  breadthFirst(root) {
-    if (!root) throw new Error;
+  breadthFirst() {
+    //if (!root) throw new Error;
     let array = [];
     let currentNode = this.root;
     array.push(currentNode.value);
     function _helper(node) {
+      currentNode = node;
       if (currentNode.left) array.push(currentNode.left.value);
       if (currentNode.right) array.push(currentNode.right.value);
-      if (currentNode.left) currentNode = currentNode.left;
-      if (currentNode.right) currentNode = currentNode.right;
+      let nextNode = currentNode.left;
+      if (nextNode) {
+        _helper(nextNode);
+      }
 
+      let rightNode = currentNode.right;
+      if (rightNode) {
+        _helper(rightNode);
+
+      }
       return;
-
     }
     _helper(currentNode);
     return array;
@@ -90,24 +101,30 @@ class BinaryTree {
 }
 
 
-class BinarySearchTree {
-  constructor(rootNode = null) {
-    this.rootNode = new Node(rootNode);
-  }
+class BinarySearchTree extends BinaryTree {
+  // class BinaryTree {
+  //constructor() {
+  // this.root = null;
+  //constructor(rootNode = null) {
+  //this.rootNode = new Node(rootNode);
+  //}
 
-  add(newNodeValue) { // creates the add method
-    let newNode = new Node(newNodeValue);
-
-    if (!this.rootNode) {
-      this.rootNode = newNode;
-
-    } else {
-      this.add(this.rootNode, newNode);
-
+  add(value) { // creates the add method
+    //    let newNode = new Node(value);
+    if (typeof value !== 'number') {
+      return null;
     }
-    return this.rootNode;
-  }
+    if (!this.rootNode) {
+      this.rootNode = new Node(value);
+      return;
 
+      // } else {
+      //   this.add(this.rootNode, newNode);
+
+      // }
+      // return this.rootNode;
+    }
+  }
   contains(searchValue) {
     let node = this.rootNode;
     let traverse = node => {
@@ -123,8 +140,22 @@ class BinarySearchTree {
     return traverse(node);
   }
 
-
 }
+// add(value) {
+//   // if we are adding to a BST, the value has to be an integer
+//   if (typeof value !== 'number') {
+//     return null;
+//   }
+//   // make a new node to insert
+//   if (!this.root) {
+//     this.root = new Node(value);
+//     return;
+//   }
+// }
+
+
+
+
 
 /////////////////////////////////////////////////
 // code challenge 17
@@ -132,11 +163,11 @@ class BinarySearchTree {
 
 
 
+module.exports = { Node, BinaryTree, BinarySearchTree };
 
-//module.exports = { Node, BinaryTree, BinarySearchTree };
-module.exports.Node = Node;
-module.exports.BinaryTree = BinaryTree;
-module.exports.BinarySearchTree = BinarySearchTree;
+//module.exports.Node = Node;
+//module.exports.BinaryTree = BinaryTree;
+//module.exports.BinarySearchTree = BinarySearchTree;
 
 // 'use strict';
 // class Node {
@@ -150,8 +181,8 @@ module.exports.BinarySearchTree = BinarySearchTree;
 //   }
 //   // preOrder(), inOrder(), postOrder()
 // }
-// class BinarySearchTree extends BinaryTree {
-//   // add(value), contains(value)
+//class BinarySearchTree extends BinaryTree {
+//  // add(value), contains(value)
 // }
 // module.exports = { Node, BinaryTree, BinarySearchTree };
 
@@ -172,16 +203,16 @@ module.exports.BinarySearchTree = BinarySearchTree;
 //     this.root = null;
 //   }
 //   // this will add a value to a BST
-//   add(value) {
-//     // if we are adding to a BST, the value has to be an integer
-//     if (typeof value !== 'number') {
-//       return null;
-//     }
-//     // make a new node to insert
-//     if (!this.root) {
-//       this.root = new Node(value);
-//       return;
-//     }
+// add(value) {
+//   // if we are adding to a BST, the value has to be an integer
+//   if (typeof value !== 'number') {
+//     return null;
+//   }
+//   // make a new node to insert
+//   if (!this.root) {
+//     this.root = new Node(value);
+//     return;
+//   }
 
 
 //     let _insert = (node) => {
