@@ -35,7 +35,7 @@
 + Space:O(1) - No additional space is being created
 
 
-## Solution
+## Solution InsertionSort
 
 ```
 let insertionSort = (int, arr) => {
