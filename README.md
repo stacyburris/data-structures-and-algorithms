@@ -13,3 +13,4 @@
 + [Multi-bracket Validation](javascript/code-challenges/multiBracketValidation/README.md)
 + [Trees](javascript/code-challenges/tree/README.md)
 + [FizzBuzzTree](javascript/code-challenges/fizzBuzzTree/README.md)
++ [Blog - Insertion Sort](javascript/code-challenges/blog/BLOG.md)
