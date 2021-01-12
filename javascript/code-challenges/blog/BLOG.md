@@ -53,3 +53,8 @@ let insertionSort = (int, arr) => {
 ```
 
 + ![Insertion Sort](code-challenge-26.png)
++ ![one](one.png)
++ ![two](two.png)
++ ![three](three.png)
++ ![four](four.png)
++ ![five](five.png)
