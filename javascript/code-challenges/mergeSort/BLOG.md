@@ -43,18 +43,18 @@ In your blog article, visually show the output of processing this input array:
 
 [merge-sort.js](javascript/code-challenges/mergeSort/merge-sort.js)
 
-+ ![image 1](/assets/mergeSort1.png)
++ ![mergeSort1](assets/mergeSort1.png)
 
-+ ![image 2](/assets/mergeSort2.png)
++ ![mergeSort2](assets/mergeSort2.png)
 
-+ ![image 3](/assets/mergeSort3.png)
++ ![mergeSort3](assets/mergeSort3.png)
 
-+ ![image 4](/assets/mergeSort4.png)
++ ![mergeSort4](assets/mergeSort4.png)
 
-+ ![image 5](/assets/mergeSort5.png)
++ ![mergeSort5](assets/mergeSort5.png)
 
-+ ![image 6](/assets/mergeSort6.png)
++ ![mergeSort6](assets/mergeSort6.png)
 
-+ ![image 7](/assets/mergeSort7.png)
++ ![mergeSort7](assets/mergeSort7.png)
 
-+ ![image 8](/assets/mergeSort8.png)
++ ![mergeSort8](assets/mergeSort8.png)
