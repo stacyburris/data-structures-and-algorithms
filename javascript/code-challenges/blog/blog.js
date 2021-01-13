@@ -1,6 +1,18 @@
 'use strict';
 
-let insertionSort = (int, arr) => {
+// let insertionSort = (int, arr) => {
+//   for (let i = 1; i < arr.length; i++) {
+//     let j = i - 1;
+//     let temp = arr[i];
+//     while (j >= 0 && temp < arr[j]) {
+//       arr[j + 1] = arr[j];
+//       j = j - 1;
+//     }
+//     arr[j + 1] = temp;
+//   }
+//   return arr;
+// };
+const insertionSort = (arr) => {
   for (let i = 1; i < arr.length; i++) {
     let j = i - 1;
     let temp = arr[i];
@@ -12,7 +24,6 @@ let insertionSort = (int, arr) => {
   }
   return arr;
 };
-
 
 
 
