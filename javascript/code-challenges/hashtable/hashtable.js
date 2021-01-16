@@ -67,6 +67,10 @@ class HashMap {
     //if (this.map[index]) {
     // sets a var to equal the map key from the hashmap constructor that exists at the head node of the linked list
     let current = this.map[index].head;
+    // recent add
+    if (this.contains(key) === false) {
+      return; // something false;
+    }
 
     console.log('CURRENT', current);
     console.log('CURRENT IN KEY', current.value[key]);
@@ -89,6 +93,9 @@ class HashMap {
   contains(key) {
     const index = this.hash(key);
     let current = this.map[index].head;
+    if (!current) { // error check
+      return false;
+    }
     while (current) {
       let keyOfObject = Object.keys(current.value);
       if (keyOfObject[0] === key) {
