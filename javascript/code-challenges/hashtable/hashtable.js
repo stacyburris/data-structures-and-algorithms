@@ -62,28 +62,45 @@ class HashMap {
   // return it's value
   get(key) {
     const index = this.hash(key);
+    // set a var to equal the hash method from the hashmap constructor and takes in a key
     console.log('INDEX:', index);
-    if (this.map[index]) {
-      let current = this.map[index].head;
-      console.log('CURRENT', current);
-      console.log('CURRENT IN KEY', current.value[key]);
+    //if (this.map[index]) {
+    // sets a var to equal the map key from the hashmap constructor that exists at the head node of the linked list
+    let current = this.map[index].head;
 
-      while (current) {
-        let keyOfObject = Object.keys(current.value);
-        let valueOfObject = Object.values(current.value);
-        console.log({ keyOfObject });
-        console.log({ index });
-        if (keyOfObject[0] === key) {
-          return valueOfObject[0];
-        }
-        current = current.next;
+    console.log('CURRENT', current);
+    console.log('CURRENT IN KEY', current.value[key]);
+    // sets while loop that takes in current node value
+    while (current) {
+      // set var to equal object.keys method taking in the value of the current
+      let keyOfObject = Object.keys(current.value);
+      let valueOfObject = Object.values(current.value);
+      console.log({ keyOfObject });
+      console.log({ index });
+      if (keyOfObject[0] === key) {
+        return valueOfObject[0];
       }
+      current = current.next;
     }
-    //contains(key){
-    //}
   }
+
+  // contains - takes in a key and returns a boolean
+  // if key exists in table already
+  contains(key) {
+    const index = this.hash(key);
+    let current = this.map[index].head;
+    while (current) {
+      let keyOfObject = Object.keys(current.value);
+      if (keyOfObject[0] === key) {
+        return true;
+      }
+      current = current.next;
+    }
+    return false;
+  }
+
 }
+
 
 module.exports = HashMap;
 
-// contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
