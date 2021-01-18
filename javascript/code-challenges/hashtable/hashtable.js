@@ -30,7 +30,7 @@ class LinkedList {
 class HashMap {
   constructor(size) {
     this.size = size;
-    this.map = new Array(size);
+    this.map = new Array(size); // our array
   }
   // acc = answerSoFar
   //charCodeAt = returns a single integer between 0  and 65,535
@@ -71,13 +71,12 @@ class HashMap {
     if (this.contains(key) === false) {
       return; // something false;
     }
-
-    console.log('CURRENT', current);
     console.log('CURRENT IN KEY', current.value[key]);
-    // sets while loop that takes in current node value
-    while (current) {
-      // set var to equal object.keys method taking in the value of the current
-      let keyOfObject = Object.keys(current.value);
+    while (current) { // sets while loop that takes in current node value
+      console.log('CURRENT', current);
+      // if(current.value.hasOwnProperty(key)){return current.value[key]}
+      // current = current.next;
+      let keyOfObject = Object.keys(current.value); // set var to equal object.keys method taking in the value of the current
       let valueOfObject = Object.values(current.value);
       console.log({ keyOfObject });
       console.log({ index });
@@ -86,14 +85,12 @@ class HashMap {
       }
       current = current.next;
     }
+    // return null; // error checking
   }
-
-  // contains - takes in a key and returns a boolean
-  // if key exists in table already
-  contains(key) {
+  contains(key) { // contains - takes in a key and returns a boolean // if key exists in table already
     const index = this.hash(key);
     let current = this.map[index].head;
-    if (!current) { // error check
+    if (!current) { // error checking
       return false;
     }
     while (current) {
