@@ -17,3 +17,4 @@
 + [Merge Sort Readme](javascript/code-challenges/mergeSort/README.md)
 + [Merge Sort Blog](javascript/code-challenges/mergeSort/BLOG.md)
 + [HashTable](javascript/code-challenges/hashtable/README.md)
++ [repeatedWord](javascript/code-challenges/repeatedWord/README.md)
