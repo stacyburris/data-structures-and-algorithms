@@ -18,3 +18,4 @@
 + [Merge Sort Blog](javascript/code-challenges/mergeSort/BLOG.md)
 + [HashTable](javascript/code-challenges/hashtable/README.md)
 + [repeatedWord](javascript/code-challenges/repeatedWord/README.md)
++ [treeIntersection](javascript/code-challenges/treeintersection/README.md)
