@@ -20,4 +20,4 @@ Combine the key and corresponding values (if they exist) into a new data structu
 
 ## Solution
 
-+ ![leftJoin](CC33.png)
++ ![leftJoin](assets/CC33.png)
