@@ -1,6 +1,6 @@
 'use strict';
 
-const Graph = require('../graph/graph');
+const Graph = require('../graph');
 
 
 function breadthFirstSearch(startNode) {
