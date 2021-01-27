@@ -22,3 +22,4 @@
 + [leftJoin](javascript/code-challenges/leftJoin/README.md)
 + [graph](javascript/code-challenges/graph/README.md)
 + [breadthFirst](javascript/code-challenges/breadthFirst/README.md)
++ [getEdge](javascript/code-challenges/getEdge/README.md)
