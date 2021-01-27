@@ -21,5 +21,6 @@
 + [treeIntersection](javascript/code-challenges/treeintersection/README.md)
 + [leftJoin](javascript/code-challenges/leftJoin/README.md)
 + [graph](javascript/code-challenges/graph/README.md)
-+ [breadthFirst](javascript/code-challenges/breadthFirst/README.md)
-+ [getEdge](javascript/code-challenges/getEdge/README.md)
++ [breadthFirst](javascript/code-challenges/graph/breadthFirst/README.md)
++ [getEdge](javascript/code-challenges/graph/getEdge/README.md)
++ [depthFirst](javascript/code-challenges/graph/depthFirst/README.md)
